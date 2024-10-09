@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios de Programação </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Desafios do Estágio </h1>
+    <div class="tabs">
+        <div class="tab active" onclick="showTab('questao1')">Questão 1</div>
+        <div class="tab" onclick="showTab('questao2')">Questão 2</div>
+        <div class="tab" onclick="showTab('questao3')">Questão 3</div>
+        <div class="tab" onclick="showTab('questao4')">Questão 4</div>
+        <div class="tab" onclick="showTab('questao5')">Questão 5</div>
+    </div>
+
+    <div id="questao1" class="tab-content active">
+        <h2>Questão 1 - Soma dos números de 1 a 13</h2>
+        <p>O valor final da soma é: <span id="resultado1"></span></p>
+        <button onclick="calcularSoma()">Calcular</button>
+    </div>
+
+    <div id="questao2" class="tab-content">
+        <h2>Questão 2 - Verificação de Sequência de Fibonacci</h2>
+        <input type="number" id="numero2" placeholder="Digite um número">
+        <button onclick="verificarFibonacci()">Verificar</button>
+        <p id="resultado2"></p>
+    </div>
+
+    <div id="questao3" class="tab-content">
+        <h2>Questão 3 - Análise de Faturamento Diário</h2>
+        <p>Menor valor de faturamento: <span id="menor"></span></p>
+        <p>Maior valor de faturamento: <span id="maior"></span></p>
+        <p>Dias com faturamento acima da média: <span id="dias-acima"></span></p>
+        <button onclick="calcularFaturamento()">Calcular</button>
+    </div>
+
+    <div id="questao4" class="tab-content">
+        <h2>Questão 4 - Percentual de Faturamento por Estado</h2>
+        <ul id="percentuais"></ul>
+        <button onclick="calcularPercentual()">Calcular Percentuais</button>
+    </div>
+
+    <div id="questao5" class="tab-content">
+        <h2>Questão 5 - Inversão de String</h2>
+        <input type="text" id="texto5" placeholder="Digite uma string">
+        <button onclick="inverterTexto()">Inverter</button>
+        <p>String invertida: <span id="resultado5"></span></p>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/questao1.js"></script>
+    <script src="scripts/questao2.js"></script>
+    <script src="scripts/questao3.js"></script>
+    <script src="scripts/questao4.js"></script>
+    <script src="scripts/questao5.js"></script>
+</body>
+</html>
